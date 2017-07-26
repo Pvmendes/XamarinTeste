@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="1" android:versionName="1.0" package="IndoorTeste.Android">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+  <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+  <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
+  <uses-permission android:name="android.permission.BIND_REMOTEVIEWS" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.RECEIVE_MMS" />
+  <uses-permission android:name="android.permission.REBOOT" />
+  <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+  <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+  <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+  <uses-permission android:name="android.permission.BIND_INPUT_METHOD" />
+  <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+  <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+  <uses-permission android:name="android.permission.BIND_MIDI_DEVICE_SERVICE" />
+  <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+  <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
+  <application android:label="IndoorTeste.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="IndoorTeste" android:theme="@style/MainTheme" android:name="md545ea5e6927a8b5df3705b8c5a2d5aeb8.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="IndoorTeste.Android.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.IndoorTeste.Android" />
+      </intent-filter>
+    </receiver>
+    <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+      </intent-filter>
+    </receiver>
+    <service android:name="org.altbeacon.beacon.service.BeaconService" android:enabled="true" android:exported="false" android:isolatedProcess="false" android:label="beacon" />
+    <service android:name="org.altbeacon.beacon.BeaconIntentProcessor" android:enabled="true" android:exported="false" />
+    <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+      </intent-filter>
+    </receiver>
+    <service android:name="org.altbeacon.beacon.service.BeaconService" android:enabled="true" android:exported="false" android:isolatedProcess="false" android:label="beacon" />
+    <service android:name="org.altbeacon.beacon.BeaconIntentProcessor" android:enabled="true" android:exported="false" />
+    <service android:name="com.estimote.sdk.service.BeaconService" android:exported="false" />
+    <service android:name="com.estimote.sdk.repackaged.dfu_v0_6_1.no.nordicsemi.android.dfu.DfuBaseService" />
+    <activity android:name="com.estimote.sdk.DefaultRequirementsCheckerCallback$Activity" android:theme="@style/Theme.Transparent" />
+    <receiver android:name="com.estimote.sdk.service.BeaconService$ScanAlarmBroadcastReceiver" />
+    <service android:name="com.estimote.sdk.connection.internal.DeviceConnectionProviderService" android:exported="false" />
+    <service android:name="com.estimote.sdk.service.BeaconService" android:exported="false" />
+    <service android:name="com.estimote.sdk.repackaged.dfu_v0_6_1.no.nordicsemi.android.dfu.DfuBaseService" />
+    <activity android:name="com.estimote.sdk.DefaultRequirementsCheckerCallback$Activity" android:theme="@style/Theme.Transparent" />
+    <receiver android:name="com.estimote.sdk.service.BeaconService$ScanAlarmBroadcastReceiver" />
+    <service android:name="com.estimote.sdk.connection.internal.DeviceConnectionProviderService" android:exported="false" />
+  </application>
+  <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
+</manifest>
