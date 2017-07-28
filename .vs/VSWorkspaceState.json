@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\IndoorTeste",
+    "\\IndoorTeste\\IndoorTeste.Android",
+    "\\IndoorTeste\\IndoorTeste.Android\\obj",
+    "\\IndoorTeste\\IndoorTeste.Android\\obj\\Debug",
+    "\\IndoorTeste\\IndoorTeste.Android\\obj\\Debug\\__library_projects__",
+    "\\IndoorTeste\\IndoorTeste.Android\\obj\\Debug\\__library_projects__\\Xamarin.Android.Support.v7.AppCompat",
+    "\\IndoorTeste\\IndoorTeste.Android\\obj\\Debug\\__library_projects__\\Xamarin.Android.Support.v7.AppCompat\\library_project_imports",
+    "\\IndoorTeste\\IndoorTeste.Android\\obj\\Debug\\__library_projects__\\Xamarin.Android.Support.v7.AppCompat\\library_project_imports\\res",
+    "\\IndoorTeste\\IndoorTeste.Android\\obj\\Debug\\__library_projects__\\Xamarin.Android.Support.v7.AppCompat\\library_project_imports\\res\\values-v24"
+  ],
+  "SelectedNode": "\\IndoorTeste\\IndoorTeste.Android\\FileHelper.cs",
+  "PreviewInSolutionExplorer": false
+}

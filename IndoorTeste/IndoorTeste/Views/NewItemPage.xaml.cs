@@ -26,9 +26,9 @@ namespace IndoorTeste.Views
 
         async void Save_Clicked(object sender, EventArgs e)
         {
-            var Itam = await App.Database.GetTodoItemsAsync1();
-            string value = await App.Database.GetTodoItemsAsync2();
-            await App.Database.SaveItemAsync(Itam);
+            //var Itam = await App.Database.GetTodoItemsAsync1();
+            //string value = await App.Database.GetTodoItemsAsync2();
+            await App.Database.SaveItemAsync(Item);
             //MessagingCenter.Send(this, "SaveItemAsync", Item);
             await Navigation.PopToRootAsync();
         }
