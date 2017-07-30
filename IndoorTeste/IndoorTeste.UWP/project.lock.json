@@ -24836,16 +24836,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\paulo\\Desktop\\IndoorTeste\\IndoorTeste\\IndoorTeste.UWP\\IndoorTeste.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\paulo\\Source\\Repos\\XamarinTeste\\IndoorTeste\\IndoorTeste.UWP\\IndoorTeste.UWP.csproj",
       "projectName": "IndoorTeste.UWP",
-      "projectPath": "C:\\Users\\paulo\\Desktop\\IndoorTeste\\IndoorTeste\\IndoorTeste.UWP\\IndoorTeste.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\paulo\\Desktop\\IndoorTeste\\IndoorTeste\\IndoorTeste.UWP\\project.json",
+      "projectPath": "C:\\Users\\paulo\\Source\\Repos\\XamarinTeste\\IndoorTeste\\IndoorTeste.UWP\\IndoorTeste.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\paulo\\Source\\Repos\\XamarinTeste\\IndoorTeste\\IndoorTeste.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\paulo\\Desktop\\IndoorTeste\\IndoorTeste\\IndoorTeste\\IndoorTeste.csproj": {
-              "projectPath": "C:\\Users\\paulo\\Desktop\\IndoorTeste\\IndoorTeste\\IndoorTeste\\IndoorTeste.csproj"
+            "C:\\Users\\paulo\\Source\\Repos\\XamarinTeste\\IndoorTeste\\IndoorTeste\\IndoorTeste.csproj": {
+              "projectPath": "C:\\Users\\paulo\\Source\\Repos\\XamarinTeste\\IndoorTeste\\IndoorTeste\\IndoorTeste.csproj"
             }
           }
         }

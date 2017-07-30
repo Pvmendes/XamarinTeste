@@ -31,8 +31,8 @@ namespace IndoorTeste.Views
         void Delete_Clicked(object sender, System.EventArgs e)
         {
             var ItemDetailViewModel = BindingContext as ItemDetailViewModel;
-            App.Database.DeleteItemAsync(ItemDetailViewModel.Item);
-            //MessagingCenter.Send(this, "DeleteItem", ItemDetailViewModel.Item);
+            //App.Database.DeleteItemAsync(ItemDetailViewModel.Item);
+            MessagingCenter.Send(this, "DeleteItem", ItemDetailViewModel.Item);
         }
     }
 }

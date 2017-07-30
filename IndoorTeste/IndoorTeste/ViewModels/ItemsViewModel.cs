@@ -21,11 +21,28 @@ namespace IndoorTeste.ViewModels
             Items = new ObservableRangeCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
+            MessagingCenter.Subscribe<EditItemPage, Item>(this, "EditItem", async (obj, item) =>
+            {
+                var _item = item as Item;                
+                //Items.Add(_item);
+                await App.Database.SaveItemAsync(_item);
+                await ExecuteLoadItemsCommand();
+            });
+
             MessagingCenter.Subscribe<NewItemPage, Item>(this, "AddItem", async (obj, item) =>
             {
                 var _item = item as Item;
-                Items.Add(_item);
+                //Items.Add(_item);
                 await App.Database.SaveItemAsync(_item);
+                await ExecuteLoadItemsCommand();
+            });
+
+            MessagingCenter.Subscribe<ItemDetailPage, Item>(this, "DeleteItem", async (obj, item) =>
+            {
+                var _item = item as Item;
+                //Items.Add(_item);
+                await App.Database.DeleteItemAsync(_item);
+                await ExecuteLoadItemsCommand();
             });
         }
 

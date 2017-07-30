@@ -11,8 +11,8 @@
 namespace IndoorTeste.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo.mendes\\Source\\Repos\\XamarinTeste\\IndoorTeste\\IndoorTeste\\Views\\Edi" +
-        "tItemPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo\\Source\\Repos\\XamarinTeste\\IndoorTeste\\IndoorTeste\\Views\\EditItemPa" +
+        "ge.xaml")]
     public partial class EditItemPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

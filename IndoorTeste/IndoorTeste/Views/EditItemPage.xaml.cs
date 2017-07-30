@@ -23,8 +23,8 @@ namespace IndoorTeste.Views
 
         async void Save_Clicked(object sender, EventArgs e)
         {
-            App.Database.SaveItemAsync(Item);
-            //MessagingCenter.Send(this, "EditItem", Item);
+            //App.Database.SaveItemAsync(Item);
+            MessagingCenter.Send(this, "EditItem", Item);
             await Navigation.PopToRootAsync();
         }
     }

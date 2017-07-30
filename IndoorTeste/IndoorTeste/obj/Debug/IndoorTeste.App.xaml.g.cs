@@ -11,7 +11,7 @@
 namespace IndoorTeste {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo.mendes\\Source\\Repos\\XamarinTeste\\IndoorTeste\\IndoorTeste\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo\\Source\\Repos\\XamarinTeste\\IndoorTeste\\IndoorTeste\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
